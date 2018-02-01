@@ -10,7 +10,7 @@ import (
 )
 
 func create(t *testing.T, tag string, size int32) *shm.Memory {
-	t.Helper()
+	//t.Helper()
 
 	m, err := shm.Create(tag, size, false)
 	if err != nil {
@@ -20,7 +20,7 @@ func create(t *testing.T, tag string, size int32) *shm.Memory {
 }
 
 func open(t *testing.T, tag string, size int32) *shm.Memory {
-	t.Helper()
+	//t.Helper()
 
 	m, err := shm.Open(tag, size, false)
 	if err != nil {
